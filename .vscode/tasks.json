@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Traffic Signal",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\main_3d.cpp",
+                "-o",
+                "${workspaceFolder}\\traffic_signal.exe",
+                "-I", "C:\\MinGW\\include",
+                "-L", "C:\\MinGW\\lib",
+                "-lfreeglut",
+                "-lopengl32",
+                "-lglu32",
+                "-lwinmm"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "compiler: C:\\MinGW\\bin\\g++.exe"
+        }
+    ]
+}
